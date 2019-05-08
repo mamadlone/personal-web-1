@@ -380,7 +380,9 @@
 
               <div class="s-m">
                 <h4>Follow me</h4>
-                <a target="_blank" href="https://instagram.com/mamadlone"><i class="fab fa-instagram"></i></a>
+                <a target="_blank" class="sma" data-toggle="tooltip" href="https://instagram.com/mamadlone" title="instagram"><i class="fab fa-instagram"></i></a>
+								<a target="_blank" class="sma" data-toggle="tooltip" href="https://github.com/mamadlone" title="github"><i class="fab fa-github"></i></a>
+								<a target="_blank" class="sma" data-toggle="tooltip" href="https://codepen.io/mamadlone" title="codepen"><i class="fab fa-codepen"></i></a>
               </div>
               <!--s-m-->
             </div>
@@ -405,7 +407,7 @@
 
     <p>
       Created with <i class="fa fa-heart"></i> by
-      <a target="_blank" href="https://github.com/mamadlone">MamadLone</a>
+      <a target="_blank" href="https://aparat.com/mamadlone">MamadLone</a>
     </p>
 
   </footer>
@@ -413,12 +415,13 @@
 
 
 
-  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.js"></script>
 
-  <script src="js/bootstrap.min.js"></script>
+	<script src="js/popper.js"></script>
+	
+  <script src="js/bootstrap.js"></script>
 
-  <!--Font Awesome-->
-  <script src="js/all.min.js"></script>
+	
 
   <script>
     $(document).ready(function () {
@@ -431,6 +434,11 @@
           $(this).addClass('like');
         }
       })
+			
+			
+			$('.sma').tooltip({
+				placement: 'bottom'
+			});
 
     })
   </script>
